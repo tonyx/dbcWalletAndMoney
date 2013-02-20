@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="junit-4.9b2">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/lib/junit-4.9b2.jar!/" />
-      <root url="jar://$USER_HOME$/Downloads/dbc/cofoja-1.0-r139.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/junit-4.11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/cofoja-1.0-r139.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
