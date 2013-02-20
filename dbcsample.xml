@@ -163,7 +163,7 @@
 
 <target name="unit-test-1" depends="compile.module.dbcsample" description="Test with contract checking enabled">
 
-    <mkdir dir="${reports.tests}"/>
+	<mkdir dir="${basedir}/testreports"/>
 
     <junit fork="yes" printsummary="yes" haltonfailure="yes" >
 	     <jvmarg value="-javaagent:${basedir}/lib/cofoja-1.0-r139.jar" />  
