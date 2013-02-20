@@ -156,6 +156,41 @@
       <include name="src"/>
     </dirset>
   </path>
+
+  <target name="test" depends="compile.module.dbcsample" description="Test with contract checking enabled">
+  </target>
+
+
+<target name="unit-test-1" depends="compile.module.dbcsample" description="Test with contract checking enabled">
+
+    <mkdir dir="${reports.tests}"/>
+
+    <junit fork="yes" printsummary="yes" haltonfailure="yes" >
+	     <jvmarg value="-javaagent:${basedir}/lib/cofoja-1.0-r139.jar" />  
+      <classpath>
+        <pathelement location="${project.class.path}"/>
+        <pathelement location="${build.tests}"/>
+        <pathelement path="${java.class.path}"/>
+        <pathelement path="${dbcsample.output.dir}"/>
+        <pathelement location="${basedir}/lib/mockito-all-1.8.5.jar"/>
+	<pathelement location="${basedir}/lib/cofoja-1.0-r139.jar"/> 
+
+    <pathelement location="${basedir}/lib/junit-4.11.jar"/>
+      </classpath>
+
+      <formatter type="plain"/>
+
+      <batchtest fork="yes" todir="${reports.tests}">
+	      <fileset dir="${basedir}/src">
+          <include name="**/*Test*.java"/>
+        </fileset>
+      </batchtest>
+
+    </junit>
+
+</target>
+
+
   
   
   <target name="compile.module.dbcsample" depends="compile.module.dbcsample.production,compile.module.dbcsample.tests" description="Compile module dbcSample"/>
