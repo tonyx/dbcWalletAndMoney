@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="dbcsample" default="all">
+  
+  
+  <property file="dbcsample.properties"/>
+  <!-- Uncomment the following property if no tests compilation is needed -->
+  <!-- 
+  <property name="skip.tests" value="true"/>
+   -->
+  
+  <!-- Compiler options -->
+  
+  <property name="compiler.debug" value="on"/>
+  <property name="compiler.generate.no.warnings" value="off"/>
+  <property name="compiler.args" value="-processor com.google.java.contract.core.apt.AnnotationProcessor"/>
+  <property name="compiler.max.memory" value="128m"/>
+  <patternset id="ignored.files">
+    <exclude name="**/CVS/**"/>
+    <exclude name="**/SCCS/**"/>
+    <exclude name="**/RCS/**"/>
+    <exclude name="**/.DS_Store/**"/>
+    <exclude name="**/.svn/**"/>
+    <exclude name="**/.pyc/**"/>
+    <exclude name="**/.pyo/**"/>
+    <exclude name="**/*.pyc/**"/>
+    <exclude name="**/*.pyo/**"/>
+    <exclude name="**/.git/**"/>
+    <exclude name="**/*.hprof/**"/>
+    <exclude name="**/_svn/**"/>
+    <exclude name="**/.hg/**"/>
+    <exclude name="**/*.lib/**"/>
+    <exclude name="**/*~/**"/>
+    <exclude name="**/__pycache__/**"/>
+    <exclude name="**/.bundle/**"/>
+    <exclude name="**/*.rbc/**"/>
+  </patternset>
+  <patternset id="library.patterns">
+    <include name="*.zip"/>
+    <include name="*.apk"/>
+    <include name="*.war"/>
+    <include name="*.egg"/>
+    <include name="*.ear"/>
+    <include name="*.ane"/>
+    <include name="*.swc"/>
+    <include name="*.jar"/>
+  </patternset>
+  <patternset id="compiler.resources">
+    <include name="**/?*.properties"/>
+    <include name="**/?*.xml"/>
+    <include name="**/?*.gif"/>
+    <include name="**/?*.png"/>
+    <include name="**/?*.jpeg"/>
+    <include name="**/?*.jpg"/>
+    <include name="**/?*.html"/>
+    <include name="**/?*.dtd"/>
+    <include name="**/?*.tld"/>
+    <include name="**/?*.ftl"/>
+  </patternset>
+  
+  <!-- JDK definitions -->
+  
+  <property name="jdk.bin.1.6" value="${jdk.home.1.6}/bin"/>
+  <path id="jdk.classpath.1.6">
+    <fileset dir="${jdk.home.1.6}">
+      <include name="jre/lib/alt-rt.jar"/>
+      <include name="jre/lib/charsets.jar"/>
+      <include name="jre/lib/deploy.jar"/>
+      <include name="jre/lib/javaws.jar"/>
+      <include name="jre/lib/jce.jar"/>
+      <include name="jre/lib/jsse.jar"/>
+      <include name="jre/lib/management-agent.jar"/>
+      <include name="jre/lib/plugin.jar"/>
+      <include name="jre/lib/resources.jar"/>
+      <include name="jre/lib/rt.jar"/>
+      <include name="jre/lib/ext/dnsns.jar"/>
+      <include name="jre/lib/ext/localedata.jar"/>
+      <include name="jre/lib/ext/sunjce_provider.jar"/>
+      <include name="jre/lib/ext/sunmscapi.jar"/>
+      <include name="jre/lib/ext/sunpkcs11.jar"/>
+    </fileset>
+  </path>
+  
+  <property name="project.jdk.home" value="${jdk.home.1.6}"/>
+  <property name="project.jdk.bin" value="${jdk.bin.1.6}"/>
+  <property name="project.jdk.classpath" value="jdk.classpath.1.6"/>
+  
+  
+  <!-- Project Libraries -->
+  
+  <path id="library.mockito-all-1.8.5.classpath">
+    <pathelement location="${basedir}/lib/mockito-all-1.8.5.jar"/>
+  </path>
+  
+  <!-- Modules -->
+  
+  
+  <!-- Module dbcSample -->
+  
+  <dirname property="module.dbcsample.basedir" file="${ant.file}"/>
+  
+  
+  <property name="module.jdk.home.dbcsample" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.dbcsample" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.dbcsample" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.dbcsample" value="${compiler.args}"/>
+  
+  <property name="dbcsample.output.dir" value="${module.dbcsample.basedir}/out/production/dbcSample"/>
+  <property name="dbcsample.testoutput.dir" value="${module.dbcsample.basedir}/out/test/dbcSample"/>
+  
+  <path id="dbcsample.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="dbcsample.module.production.classpath">
+    <path refid="${module.jdk.classpath.dbcsample}"/>
+    <path refid="library.mockito-all-1.8.5.classpath"/>
+    <pathelement location="${basedir}/lib/cofoja-1.0-r139.jar"/>
+    <pathelement location="${basedir}/lib/junit-4.11.jar"/>
+  </path>
+  
+  <path id="dbcsample.runtime.production.module.classpath">
+    <pathelement location="${dbcsample.output.dir}"/>
+    <path refid="library.mockito-all-1.8.5.classpath"/>
+    <pathelement location="${basedir}/lib/cofoja-1.0-r139.jar"/>
+    <pathelement location="${basedir}/lib/junit-4.11.jar"/>
+  </path>
+  
+  <path id="dbcsample.module.classpath">
+    <path refid="${module.jdk.classpath.dbcsample}"/>
+    <pathelement location="${dbcsample.output.dir}"/>
+    <path refid="library.mockito-all-1.8.5.classpath"/>
+    <pathelement location="${basedir}/lib/cofoja-1.0-r139.jar"/>
+    <pathelement location="${basedir}/lib/junit-4.11.jar"/>
+  </path>
+  
+  <path id="dbcsample.runtime.module.classpath">
+    <pathelement location="${dbcsample.testoutput.dir}"/>
+    <pathelement location="${dbcsample.output.dir}"/>
+    <path refid="library.mockito-all-1.8.5.classpath"/>
+    <pathelement location="${basedir}/lib/cofoja-1.0-r139.jar"/>
+    <pathelement location="${basedir}/lib/junit-4.11.jar"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.dbcsample">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.dbcsample">
+    <patternset refid="excluded.from.module.dbcsample"/>
+  </patternset>
+  
+  <path id="dbcsample.module.sourcepath">
+    <dirset dir="${module.dbcsample.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.dbcsample" depends="compile.module.dbcsample.production,compile.module.dbcsample.tests" description="Compile module dbcSample"/>
+  
+  <target name="compile.module.dbcsample.production" description="Compile module dbcSample; production classes">
+    <mkdir dir="${dbcsample.output.dir}"/>
+    <javac destdir="${dbcsample.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.dbcsample}/javac">
+      <compilerarg line="${compiler.args.dbcsample}"/>
+      <bootclasspath refid="dbcsample.module.bootclasspath"/>
+      <classpath refid="dbcsample.module.production.classpath"/>
+      <src refid="dbcsample.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.dbcsample"/>
+    </javac>
+    
+    <copy todir="${dbcsample.output.dir}">
+      <fileset dir="${module.dbcsample.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.dbcsample.tests" depends="compile.module.dbcsample.production" description="compile module dbcSample; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.dbcsample" description="cleanup module">
+    <delete dir="${dbcsample.output.dir}"/>
+    <delete dir="${dbcsample.testoutput.dir}"/>
+  </target>
+  
+  <target name="init" description="Build initialization">
+    <!-- Perform any build initialization in this target -->
+  </target>
+  
+  <target name="clean" depends="clean.module.dbcsample" description="cleanup all"/>
+  
+  <target name="build.modules" depends="init, clean, compile.module.dbcsample" description="build all modules"/>
+  
+  <target name="all" depends="build.modules" description="build all"/>
+</project>
