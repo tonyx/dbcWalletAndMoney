@@ -23,7 +23,7 @@ public class Wallet {
         this(streamOutput, new Money(0));
     }
 
-    private Wallet(StreamOutput streamOutput, Money money) {
+    public Wallet(StreamOutput streamOutput, Money money) {
         this.streamOutput= streamOutput;
         this.money=money;
     }

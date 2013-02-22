@@ -31,6 +31,8 @@
     <file path="/StreamOutput.java" changelist="f5bffc3e-acc3-4712-bf39-113405406d76" time="1360592914524" ignored="false" />
     <file path="/ConsoleOutput.java" changelist="f5bffc3e-acc3-4712-bf39-113405406d76" time="1360592946240" ignored="false" />
     <file path="/ProgramTest.java" changelist="f5bffc3e-acc3-4712-bf39-113405406d76" time="1360602910330" ignored="false" />
+    <file path="/Wallet.java" changelist="f5bffc3e-acc3-4712-bf39-113405406d76" time="1361564213070" ignored="false" />
+    <file path="/WalletTest.java" changelist="f5bffc3e-acc3-4712-bf39-113405406d76" time="1361564564881" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,10 +118,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MoneyTest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MoneyTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/it/dbcSample/MoneyTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="0" selection-start="1735" selection-end="1735" vertical-scroll-proportion="0.8947368">
+            <state line="65" column="0" selection-start="1735" selection-end="1735" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -128,7 +130,7 @@
       <file leaf-file-name="Wallet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/it/dbcSample/Wallet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="140" selection-end="140" vertical-scroll-proportion="0.0">
+            <state line="25" column="9" selection-start="532" selection-end="532" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -154,10 +156,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WalletTest.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="WalletTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/it/dbcSample/WalletTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="20" selection-start="1678" selection-end="1678" vertical-scroll-proportion="0.0">
+            <state line="77" column="0" selection-start="2070" selection-end="2070" vertical-scroll-proportion="0.8259109">
               <folding />
             </state>
           </provider>
@@ -173,8 +175,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/MoneyFactory.java" />
-        <option value="$PROJECT_DIR$/src/MoneyOnlyPositive.java" />
         <option value="$PROJECT_DIR$/src/MoneyAllowingNegative.java" />
         <option value="$PROJECT_DIR$/src/AccountTest.java" />
         <option value="$PROJECT_DIR$/src/MoneyAllowingDebts.java" />
@@ -189,6 +189,8 @@
         <option value="$PROJECT_DIR$/src/test/MoneyTest.java" />
         <option value="$PROJECT_DIR$/src/test/dbcSample/MoneyTest.java" />
         <option value="$PROJECT_DIR$/src/test/it/dbcSample/MoneyTest.java" />
+        <option value="$PROJECT_DIR$/src/it/dbcSample/Wallet.java" />
+        <option value="$PROJECT_DIR$/src/test/it/dbcSample/WalletTest.java" />
       </list>
     </option>
   </component>
@@ -461,7 +463,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1040" height="576" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -476,7 +478,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15132925" sideWeight="0.78281623" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26789367" sideWeight="0.78281623" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26789367" sideWeight="0.78281623" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17379679" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -594,22 +596,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/it/dbcSample/Wallet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="140" selection-end="140" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/it/dbcSample/WalletTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="20" selection-start="1678" selection-end="1678" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testreports/TEST-MyContractTest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="96" column="0" selection-start="9122" selection-end="9122" vertical-scroll-proportion="0.0">
@@ -619,7 +605,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/it/dbcSample/MoneyTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="0" selection-start="1735" selection-end="1735" vertical-scroll-proportion="0.8947368">
+        <state line="65" column="0" selection-start="1735" selection-end="1735" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/dbcSample/Wallet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="9" selection-start="532" selection-end="532" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/it/dbcSample/WalletTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="0" selection-start="2070" selection-end="2070" vertical-scroll-proportion="0.8259109">
           <folding />
         </state>
       </provider>

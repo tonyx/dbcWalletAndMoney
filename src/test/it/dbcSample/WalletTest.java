@@ -1,6 +1,7 @@
 package test.it.dbcSample;
 
 import io.StreamOutput;
+import it.dbcSample.Money;
 import it.dbcSample.Wallet;
 import org.junit.Test;
 import org.mockito.InOrder;
@@ -49,15 +50,13 @@ public class WalletTest {
         StreamOutput streamOutput = mock(StreamOutput.class);
 
         // when
-        Wallet wallet = new Wallet(streamOutput);
+        Wallet wallet = new Wallet(streamOutput, new Money(1));
         wallet.run();
-        wallet.addMoney(1);
         wallet.spendMoney(1);
         InOrder inOrder = inOrder(streamOutput);
 
         // then
         inOrder.verify(streamOutput).output("welcome to your wallet");
-        inOrder.verify(streamOutput).output("you just added 1 to your wallet");
         inOrder.verify(streamOutput).output("you just spent 1");
     }
 
@@ -67,15 +66,13 @@ public class WalletTest {
         StreamOutput streamOutput = mock(StreamOutput.class);
 
         // when
-        Wallet wallet = new Wallet(streamOutput);
+        Wallet wallet = new Wallet(streamOutput, new Money(1));
         wallet.run();
-        wallet.addMoney(1);
         wallet.spendMoney(2);
         InOrder inOrder = inOrder(streamOutput);
 
         // then
         inOrder.verify(streamOutput).output("welcome to your wallet");
-        inOrder.verify(streamOutput).output("you just added 1 to your wallet");
         inOrder.verify(streamOutput).output("insufficient credit");
     }
 }
