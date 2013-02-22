@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/MoneyTest.java" line="56" />
+    <bookmark url="file://$PROJECT_DIR$/src/test/it/dbcSample/MoneyTest.java" line="59" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5bffc3e-acc3-4712-bf39-113405406d76" name="Default" comment="" />
     <ignored path="dbcSample.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/MyContract.java" changelist="f5bffc3e-acc3-4712-bf39-113405406d76" time="1359741496670" ignored="false" />
-    <file path="/fragment.java" changelist="f5bffc3e-acc3-4712-bf39-113405406d76" time="1360592870544" ignored="false" />
+    <file path="/fragment.java" changelist="f5bffc3e-acc3-4712-bf39-113405406d76" time="1361559658400" ignored="false" />
     <file path="/Dummy.txt" changelist="f5bffc3e-acc3-4712-bf39-113405406d76" time="1359741785942" ignored="false" />
     <file path="/TestMyContract.java" changelist="f5bffc3e-acc3-4712-bf39-113405406d76" time="1359823222119" ignored="false" />
     <file path="/Money.java" changelist="f5bffc3e-acc3-4712-bf39-113405406d76" time="1360597814756" ignored="false" />
@@ -89,55 +89,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MyContract.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MyContract.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="18" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TEST-MyContractTest.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TEST-MyContractTest.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testreports/TEST-MyContractTest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="0" selection-start="9122" selection-end="9122" vertical-scroll-proportion="0.81376517">
+            <state line="96" column="0" selection-start="9122" selection-end="9122" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Money.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Money.java">
+        <entry file="file://$PROJECT_DIR$/src/it/dbcSample/Money.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="17" selection-start="813" selection-end="813" vertical-scroll-proportion="0.0">
+            <state line="44" column="17" selection-start="836" selection-end="836" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="MoneyAllowingDebts.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MoneyAllowingDebts.java">
+        <entry file="file://$PROJECT_DIR$/src/it/dbcSample/MoneyAllowingDebts.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="542" selection-end="542" vertical-scroll-proportion="0.0">
+            <state line="24" column="0" selection-start="565" selection-end="565" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MoneyTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MoneyTest.java">
+      <file leaf-file-name="MoneyTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/it/dbcSample/MoneyTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="4" selection-start="965" selection-end="965" vertical-scroll-proportion="0.0">
+            <state line="65" column="0" selection-start="1735" selection-end="1735" vertical-scroll-proportion="0.8947368">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Wallet.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Wallet.java">
+        <entry file="file://$PROJECT_DIR$/src/it/dbcSample/Wallet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0">
+            <state line="9" column="0" selection-start="140" selection-end="140" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -164,9 +155,9 @@
         </entry>
       </file>
       <file leaf-file-name="WalletTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WalletTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/it/dbcSample/WalletTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="20" selection-start="1622" selection-end="1622" vertical-scroll-proportion="0.0">
+            <state line="64" column="20" selection-start="1678" selection-end="1678" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -182,9 +173,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/AccountAllowingNegativeBalance.java" />
-        <option value="$PROJECT_DIR$/src/AccountOnlyPositiveBalance.java" />
-        <option value="$PROJECT_DIR$/src/AccountFactory.java" />
         <option value="$PROJECT_DIR$/src/MoneyFactory.java" />
         <option value="$PROJECT_DIR$/src/MoneyOnlyPositive.java" />
         <option value="$PROJECT_DIR$/src/MoneyAllowingNegative.java" />
@@ -198,6 +186,9 @@
         <option value="$PROJECT_DIR$/src/WalletTest.java" />
         <option value="$PROJECT_DIR$/src/Wallet.java" />
         <option value="$PROJECT_DIR$/src/MoneyTest.java" />
+        <option value="$PROJECT_DIR$/src/test/MoneyTest.java" />
+        <option value="$PROJECT_DIR$/src/test/dbcSample/MoneyTest.java" />
+        <option value="$PROJECT_DIR$/src/test/it/dbcSample/MoneyTest.java" />
       </list>
     </option>
   </component>
@@ -282,7 +273,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="io" />
+              <option name="myItemId" value="dbcSample" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -296,7 +287,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dbcSample" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -335,10 +330,10 @@
     <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
+    <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
+    <key name="CreateTestDialog.RecentsKey">
       <recent name="" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
@@ -466,7 +461,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1040" height="576" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -481,7 +476,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15132925" sideWeight="0.78281623" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22392638" sideWeight="0.78281623" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26789367" sideWeight="0.78281623" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17379679" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -550,37 +545,30 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/MyContract.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Money.java">
+    <entry file="file://$PROJECT_DIR$/src/it/dbcSample/Money.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="0" selection-start="914" selection-end="914" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MoneyAllowingDebts.java">
+    <entry file="file://$PROJECT_DIR$/src/it/dbcSample/MoneyAllowingDebts.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="9" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MoneyTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/it/dbcSample/MoneyTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="73" column="0" selection-start="2067" selection-end="2067" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MoneyAllowingDebts.java">
+    <entry file="file://$PROJECT_DIR$/src/it/dbcSample/MoneyAllowingDebts.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="542" selection-end="542" vertical-scroll-proportion="0.0">
+        <state line="24" column="0" selection-start="565" selection-end="565" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -599,46 +587,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Money.java">
+    <entry file="file://$PROJECT_DIR$/src/it/dbcSample/Money.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="17" selection-start="813" selection-end="813" vertical-scroll-proportion="0.0">
+        <state line="44" column="17" selection-start="836" selection-end="836" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wallet.java">
+    <entry file="file://$PROJECT_DIR$/src/it/dbcSample/Wallet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0">
+        <state line="9" column="0" selection-start="140" selection-end="140" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MoneyTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/it/dbcSample/WalletTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="4" selection-start="965" selection-end="965" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WalletTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="20" selection-start="1622" selection-end="1622" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyContract.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="18" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0">
+        <state line="64" column="20" selection-start="1678" selection-end="1678" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testreports/TEST-MyContractTest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="0" selection-start="9122" selection-end="9122" vertical-scroll-proportion="0.81376517">
+        <state line="96" column="0" selection-start="9122" selection-end="9122" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/it/dbcSample/MoneyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="0" selection-start="1735" selection-end="1735" vertical-scroll-proportion="0.8947368">
           <folding />
         </state>
       </provider>
