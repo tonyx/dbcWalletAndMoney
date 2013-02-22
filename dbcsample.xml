@@ -157,11 +157,9 @@
     </dirset>
   </path>
 
-  <target name="test" depends="compile.module.dbcsample" description="Test with contract checking enabled">
-  </target>
 
 
-<target name="unit-test-1" depends="compile.module.dbcsample" description="Test with contract checking enabled">
+<target name="unittest" depends="compile.module.dbcsample" description="Test with contract checking enabled">
 
 	<mkdir dir="${basedir}/testreports"/>
 

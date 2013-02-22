@@ -42,22 +42,9 @@ public class MoneyTest {
     }
 
     @Test
-    public void clientUsesMoneyFactory() {
-        Money money = new MoneyFactory().money(1);
-        assertEquals(money,new Money(1));
-    }
-
-    @Test
     public void canSeeTheMoneyAmount()  {
-        Money money = new MoneyFactory().money(1);
+        Money money = new Money(1);
         assertEquals(1, money.getAmount());
-    }
-
-    @Test
-    public void ifIspendONeUnitOfMoneyFromTwoThenIlRemainWithOne()  {
-        Money money = new MoneyFactory().money(2);
-        Money residualMoney = money.spendMoney(1);
-        assertEquals(1, residualMoney.getAmount());
     }
 
     @Test(expected=com.google.java.contract.PreconditionError.class)

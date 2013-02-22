@@ -35,15 +35,15 @@ public class Wallet {
     }
 
     public void addMoney(int addedmoney)  {
-        this.money = money.addAmount(addedmoney);
+        money = money.addAmount(addedmoney);
         streamOutput.output("you just added "+addedmoney+" to your wallet");
     }
 
     public void spendMoney(int spentAmount) {
-        if (spentAmount>this.money.getAmount()) {
+        if (spentAmount> money.getAmount()) {
             streamOutput.output("insufficient credit");
         } else {
-            this.money = this.money.spendMoney(spentAmount);
+            money = money.spendMoney(spentAmount);
             streamOutput.output("you just spent "+spentAmount);
         }
     }
