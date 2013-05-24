@@ -1,7 +1,9 @@
 package it.dbcSample;
 
-import io.ConsoleOutput;
-import io.StreamOutput;
+import io.ConsoleInputStream;
+import io.ConsoleOutputStream;
+import io.InputStream;
+import io.OutputStream;
 
 /**
  * Created with IntelliJ IDEA.
@@ -11,21 +13,29 @@ import io.StreamOutput;
  * To change this template use File | Settings | File Templates.
  */
 public class Wallet {
-    StreamOutput streamOutput;
+    OutputStream outputStream;
+    InputStream inputStream;
     Money money;
 
     public static void main(String string[]){
-        Wallet wallet = new Wallet(new ConsoleOutput());
+        Wallet wallet = new Wallet(new ConsoleInputStream(), new ConsoleOutputStream(),new Money(0));
         wallet.run();
     }
 
-    public Wallet(StreamOutput streamOutput) {
-        this(streamOutput, new Money(0));
+    public Wallet(InputStream inputStream, OutputStream outputStream, Money money) {
+        this.inputStream = inputStream;
+        this.outputStream = outputStream;
+        this.money=money;
     }
 
-    public Wallet(StreamOutput streamOutput, Money money) {
-        this.streamOutput= streamOutput;
+    public Wallet(OutputStream outputStream) {
+        this(new ConsoleInputStream(), outputStream, new Money(0));
+    }
+
+    public Wallet(OutputStream outputStream, Money money) {
+        this.outputStream = outputStream;
         this.money=money;
+        this.inputStream = new ConsoleInputStream();
     }
 
     public void run() {
@@ -33,22 +43,45 @@ public class Wallet {
     }
 
     private void sayWelcome() {
-        streamOutput.output("welcome to your wallet");
+        outputStream.print("welcome from your wallet");
     }
 
     public void addMoney(int addedmoney)  {
-        money = money.addAmount(addedmoney);
-        streamOutput.output("you just added "+addedmoney+" to your wallet");
+        money = money.add(addedmoney);
+        outputStream.print("you just added " + addedmoney);
     }
 
-    public void spendMoney(int spentAmount) {
-        if (spentAmount> money.getAmount()) {
-            streamOutput.output("insufficient credit");
+
+    public void spend(int amount) {
+        if (amount> money.getAmount()) {
+            outputStream.print("insufficient found");
         } else {
-            money = money.spendMoney(spentAmount);
-            streamOutput.output("you just spent "+spentAmount);
+            money = money.spend(amount);
+            outputStream.print("you just spent " + amount);
         }
     }
+
+
+
+//    public void spend(int amount)   {
+//        try {
+//            money.spend(amount);
+//            outputStream.print("you just spent "+amount);
+//        } catch (InsufficientFoundException e) {
+//            outputStream.print("insufficient found");
+//        }
+//    }
+
+
+
+//        if (spentAmount> money.getAmount()) {
+//            outputStream.print("insufficient credit");
+//        } else {
+//            money = money.spend(spentAmount);
+//            outputStream.print("you just spent "+spentAmount);
+//        }
+//    }
+
 }
 
 

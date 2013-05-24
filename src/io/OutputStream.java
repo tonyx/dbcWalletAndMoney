@@ -7,8 +7,6 @@ package io;
  * Time: 15.27
  * To change this template use File | Settings | File Templates.
  */
-public class ConsoleOutput implements StreamOutput{
-    public void output(String hello) {
-        System.out.println(hello);
-    }
+public interface OutputStream {
+    void print(String hello);
 }

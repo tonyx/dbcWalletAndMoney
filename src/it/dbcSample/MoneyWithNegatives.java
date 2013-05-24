@@ -9,17 +9,16 @@ import com.google.java.contract.Requires;
  * Time: 22.04
  * To change this template use File | Settings | File Templates.
  */
-public class MoneyAllowingDebts extends Money {
 
-    @Requires({"true"})
-    public MoneyAllowingDebts(int amount) {
+
+public class MoneyWithNegatives extends Money {
+    public MoneyWithNegatives(int amount) {
         this.amount=amount;
     }
 
     @Override
     @Requires({"true"})
-    public Money spendMoney(int spent) {
-        MoneyAllowingDebts residual = new MoneyAllowingDebts(this.getAmount()-spent);
-        return residual;
+    public Money spend(int amountToSpend) {
+        return  new MoneyWithNegatives(this.getAmount()- amountToSpend);
     }
 }

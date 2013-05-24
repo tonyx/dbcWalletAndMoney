@@ -2,11 +2,11 @@ package io;
 
 /**
  * Created with IntelliJ IDEA.
- * User: Tony
- * Date: 11/02/13
- * Time: 15.27
+ * User: Tonyx
+ * Date: 14/05/2013
+ * Time: 15:08
  * To change this template use File | Settings | File Templates.
  */
-public interface StreamOutput {
-    void output(String hello);
+public interface InputStream {
+    public String input();
 }
