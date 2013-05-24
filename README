@@ -1,5 +1,50 @@
 Class/subclass substitution, contracts using https://code.google.com/p/cofoja/
 
+The main idea is that if the client uses a supplier respecting the contract (in particular it's preconditions) then, if an extension of the supplier just relaxes its precondition, it can still substitute the father class without breaking the client behavior, and I think it is a good thing, primarily because so it does not break the test, and secondly because the client should be aware of what it is doing.
+The client can still decide to create more complex stories and change its behavior later, in smaller, but safer steps.
+
+For example: the precondition is to verify that you have enough money to spend before trying to spend them: any call that ends up in a negative amount of money state is illegal.
+
+If you extend the money relaxing this precondition, then you create a virtual notion of money, that can be spent even if they are negative.
+
+This new complexity can be useful if you are fully aware that you are creating a "debt".
+At the first place, to avoid side effect, it is a good idea that the client is aware of the preconditions and is respecting them. 
+
+Thus rather that the client says "if precondition is respected then make a call to the supplier" than "try to call the supplier, and if it does not raise any exception, then it means than go on with the call".
+
+The unconsistency in substituting the "money with the zero lower bound" with its subclass "money allowing go negative", is that any approach related to "try spend" will create stories like:
+
+try spend for a beer.
+any exception (i.e. still enough money)? No, then then take it
+
+try spend for a beer.
+any exception (i.e. still enough money)? No, then then take it
+
+try spend for a beer.
+any exception (i.e. still enough money)? No, then then take it
+
+try spend for a beer.
+any exception (i.e. still enough money)? Yes. You spend all you had in the wallet. 
+Then go home.
+
+
+Suppose the wallet contains the substitute for monay, that is the magic one that goes negative.
+
+Then you will be ruined, because the loop may go on forever:
+
+- try spend for a beer.
+- any exception (i.e. still enough money)? No, then then take it
+... and so on....
+
+It seems to me more consistent the idea that the client check the precondition (amount available >).
+In this case the money is substitutable with the subclass that relaxes the (>0) precondition. 
+
+The test related to the experience of the client are the same
+(basically: if I go out with a budget for 3 beers, I still take just three beers, no matter if theoretically I can take infinites)
+
+Then the new "complexity" given by the possibility of spending more than you have can be used to create more stories related to specific new states, for example, about the extreme needs.
+
+So, basically, if you substitute money with electronic money, it not mean that you should change your habit in how to spend them in the first place.
 
 
 
