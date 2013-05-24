@@ -25,14 +25,4 @@ public class IncrementerTest {
 
         incrementer.inc(1);
     }
-
-
-    @Test
-    public void listTest() {
-        //Assert.assertTrue(false);
-        List<String> l = new ArrayList<String>();
-        l.remove("pippo");
-        Assert.assertEquals(1,l.size());
-    }
-
 }
